@@ -1,11 +1,11 @@
 n=int(input())
-sum=0
+s=0
 while(n):
     r=n%10
-    sum+=r*r
+    s+=r*r
     n//=10
-    if n==0 and sum>=9:
-        n=sum
-        sum=0
-if sum==1 or sum==7:print(True)
+    if n==0 and s>=9:
+        n=s
+        s=0
+if s==1 or s==7:print(True)
 else:print(False)
